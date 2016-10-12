@@ -1,0 +1,21 @@
+{
+  "name": "TestingApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "15.3.2",
+    "react-native": "0.34.1",
+    "react-native-drawer": "^2.3.0",
+    "react-native-gmaps": "^1.0.9",
+    "react-native-iconic-font": "0.0.6",
+    "react-native-maps": "^0.10.1",
+    "react-native-maps-google": "^1.1.4",
+    "reflux": "^0.4.1"
+  },
+  "devDependencies": {
+    "rnpm-plugin-upgrade": "^0.26.0"
+  }
+}
