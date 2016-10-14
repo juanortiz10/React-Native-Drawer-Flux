@@ -1,8 +1,9 @@
 # Drawer + Flux Structure (React Native)
 
-###### This is a simple android react native project that includes flux structure to comunicate between navigator drawer and each screen of this. Flux structure is working with reflux.js project.
+This is a simple android react native project that includes flux structure to comunicate between navigator drawer and each screen of this. Flux structure is working with reflux.js project.
 #
-###### This project uses a number of open source projects to work properly:
+![Example](https://github.com/juanortiz10/React-Native-Drawer-Flux/blob/master/example.gif?raw=true "Example")
+This project uses a number of open source projects to work properly:
 
 * [React.JS] - Facebook library used to make awesome views
 * [React Native] - Facebook framework used to create native ios/android apps
