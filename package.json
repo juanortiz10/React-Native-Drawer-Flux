@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "15.3.2",
     "react-native": "0.34.1",
+    "react-native-card-view": "0.0.3",
     "react-native-drawer": "^2.3.0",
     "react-native-gmaps": "^1.0.9",
     "react-native-iconic-font": "0.0.6",

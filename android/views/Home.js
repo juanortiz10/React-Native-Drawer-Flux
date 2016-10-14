@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactNative = require('react-native');
-var {View, Text, StyleSheet, TouchableHighlight} = ReactNative;
+var {View, Text, StyleSheet, Image} = ReactNative;
 var Reflux = require('reflux');
 var ComponentStore = require('../stores/ComponentStore.js');
 
@@ -16,13 +16,19 @@ var Home = React.createClass({
   },
   render: function(){
     return(
-      <View>
-        <Text>I'm home view</Text>
-        <TouchableHighlight onPress={ () => this._navigate("Contact") }>
-          <Text>GO To Contact</Text>
-        </TouchableHighlight>
+      <View style={styles.container}>
+        <Text style={style.image}>Home</Text>
       </View>
     );
+  }
+});
+
+var styles = StyleSheet.create({
+  container:{
+    ...StyleSheet.absoluteFillObject
+  },
+  image:{
+    top: 180
   }
 });
 

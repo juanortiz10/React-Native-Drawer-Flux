@@ -21,6 +21,7 @@ var ProfileBox = require('./android/components/ProfileBox.js');
 var Settings = require('./android/views/Settings.js');
 var Location = require('./android/views/Location.js');
 var ComponentStore = require('./android/stores/ComponentStore.js');
+
 /*Other sources*/
 var icon = require('react-native-iconic-font/foundationicons');
 
@@ -28,9 +29,15 @@ var icon = require('react-native-iconic-font/foundationicons');
 
 var Main = React.createClass({
   mixins:[Reflux.listenTo(ComponentStore, 'onChange')],
+  getInitialState: function(){
+    return{
+      screen_name: 'Home'
+    };
+  },
   onChange: function(event,items){
     if(event == "change_route"){
       this.onClose();
+      this.setState({screen_name: items});
     }
   },
   onIconClicked: function(){
@@ -69,6 +76,8 @@ var Main = React.createClass({
           <View>
             <ToolbarAndroid
               style={styles.toolbar}
+              title={this.state.screen_name}
+              titleColor= '#FFF'
               navIcon={require('./android/icons/menu.png')}
               onIconClicked={this.onIconClicked}/>
           </View>
