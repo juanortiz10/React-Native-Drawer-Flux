@@ -3,6 +3,7 @@
 This is a simple android react native project that includes flux structure to comunicate between navigator drawer and each screen of this. Flux structure is working with reflux.js project.
 #
 ![Example](https://github.com/juanortiz10/React-Native-Drawer-Flux/blob/master/example.gif?raw=true "Example")
+#
 This project uses a number of open source projects to work properly:
 
 * [React.JS] - Facebook library used to make awesome views
